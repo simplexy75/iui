@@ -1,0 +1,23 @@
+{
+  "name": "IUI - Il Futuro dell'Automotive",
+  "short_name": "IUI",
+  "description": "Il futuro dell'automotive sta per arrivare. Preparati a vivere un'esperienza di guida rivoluzionaria.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/logo iui finale BLACK.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo iui finale BLACK.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
