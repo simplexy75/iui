@@ -543,6 +543,48 @@ body {
 }
 
 /* ==========================================
+   JOURNEY LINK
+   ========================================== */
+.journey-link-section {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+    animation: fadeInUp 1s ease-out 2s both;
+}
+
+.journey-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.journey-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.journey-link:hover {
+    background: rgba(241, 5, 68, 0.1);
+    border-color: var(--red-bright);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(241, 5, 68, 0.3);
+}
+
+.journey-link:hover .journey-arrow {
+    transform: translateX(10px);
+}
+
+/* ==========================================
    SOCIAL LINKS
    ========================================== */
 .social-links {
