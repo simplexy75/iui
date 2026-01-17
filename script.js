@@ -515,8 +515,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize easter egg
     initKonamiCode();
     
-    console.log('%c IUI - The Future is Coming ', 'background: #00d4ff; color: #0a0a0a; font-size: 20px; font-weight: bold; padding: 10px;');
-    console.log('%c Made with ❤️ and cutting-edge web technologies ', 'background: #0a0a0a; color: #00d4ff; font-size: 12px; padding: 5px;');
+    console.log('%c IUI - The Future is Coming ', 'background: #f10544; color: #ffffff; font-size: 20px; font-weight: bold; padding: 10px;');
+    console.log('%c Made with ❤️ and cutting-edge web technologies ', 'background: #0a0a0a; color: #9bccda; font-size: 12px; padding: 5px;');
 });
 
 // ==========================================
@@ -530,4 +530,6 @@ if ('serviceWorker' in navigator) {
         //     .catch(error => console.log('SW registration failed:', error));
     });
 }
+
+
 

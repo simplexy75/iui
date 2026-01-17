@@ -10,14 +10,18 @@
 }
 
 :root {
-    /* IUI Brand Colors */
+    /* IUI Brand Colors - Official Palette */
     --primary-bg: #0a0a0a;
     --secondary-bg: #111111;
     --accent-color: #ffffff;
-    --accent-glow: #00d4ff;
+    --red-primary: #bf0a2c;
+    --red-bright: #f10544;
+    --teal-primary: #256574;
+    --blue-light: #9bccda;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary: linear-gradient(135deg, #f10544 0%, #bf0a2c 100%);
+    --gradient-secondary: linear-gradient(135deg, #256574 0%, #9bccda 100%);
     --gradient-dark: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.95) 100%);
     
     /* Spacing */
@@ -220,7 +224,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    background: radial-gradient(circle, rgba(0, 212, 255, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(241, 5, 68, 0.4) 0%, rgba(37, 101, 116, 0.3) 50%, transparent 70%);
     filter: blur(60px);
     z-index: 1;
     animation: glowPulse 3s ease-in-out infinite;
@@ -245,7 +249,7 @@ body {
     height: 200px;
     background: linear-gradient(to bottom, 
         rgba(255, 255, 255, 0.3) 0%,
-        rgba(0, 212, 255, 0.2) 50%,
+        rgba(241, 5, 68, 0.3) 50%,
         transparent 100%);
     filter: blur(20px);
     transform: translateY(-50%) skewY(-10deg);
@@ -295,7 +299,7 @@ body {
 
 .title-line {
     display: block;
-    background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f10544 50%, #9bccda 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -400,9 +404,9 @@ body {
 
 .email-input:focus {
     outline: none;
-    border-color: var(--accent-glow);
+    border-color: var(--red-bright);
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 30px rgba(241, 5, 68, 0.3);
 }
 
 .email-input::placeholder {
@@ -411,10 +415,10 @@ body {
 
 .notify-btn {
     padding: 1rem 2.5rem;
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+    background: linear-gradient(135deg, #f10544 0%, #bf0a2c 100%);
     border: none;
     border-radius: 50px;
-    color: var(--primary-bg);
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
     font-family: var(--font-main);
@@ -446,7 +450,7 @@ body {
 
 .notify-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 10px 40px rgba(241, 5, 68, 0.6);
 }
 
 .notify-btn:active {
@@ -465,7 +469,7 @@ body {
 .form-message {
     margin-top: var(--spacing-sm);
     font-size: 0.9rem;
-    color: var(--accent-glow);
+    color: var(--blue-light);
     min-height: 1.5em;
 }
 
@@ -498,15 +502,15 @@ body {
 
 .countdown-item:hover {
     background: rgba(255, 255, 255, 0.06);
-    border-color: var(--accent-glow);
+    border-color: var(--red-bright);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(241, 5, 68, 0.3);
 }
 
 .countdown-value {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
-    background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+    background: linear-gradient(135deg, #f10544 0%, #9bccda 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -524,7 +528,7 @@ body {
 .countdown-separator {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
-    color: var(--accent-glow);
+    color: var(--red-bright);
     opacity: 0.5;
     animation: blink 2s ease-in-out infinite;
 }
@@ -569,10 +573,10 @@ body {
 }
 
 .social-link:hover {
-    background: var(--accent-glow);
-    border-color: var(--accent-glow);
+    background: var(--red-bright);
+    border-color: var(--red-bright);
     transform: translateY(-5px) rotate(360deg);
-    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(241, 5, 68, 0.5);
 }
 
 /* ==========================================
@@ -595,7 +599,7 @@ body {
 .footer-section h3 {
     font-size: 1.2rem;
     margin-bottom: var(--spacing-sm);
-    color: var(--accent-glow);
+    color: var(--red-bright);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
@@ -621,7 +625,7 @@ body {
 }
 
 .footer-link:hover {
-    color: var(--accent-glow);
+    color: var(--red-bright);
     transform: translateX(5px);
 }
 
@@ -755,7 +759,7 @@ body {
 
 /* Focus visible for keyboard navigation */
 *:focus-visible {
-    outline: 2px solid var(--accent-glow);
+    outline: 2px solid var(--red-bright);
     outline-offset: 4px;
 }
 
@@ -781,4 +785,6 @@ body {
     );
     background-size: 1000px 100%;
 }
+
+
 
