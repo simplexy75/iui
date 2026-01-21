@@ -474,81 +474,17 @@ body {
 }
 
 /* ==========================================
-   COUNTDOWN TIMER
+   COUNTDOWN TIMER - REMOVED
    ========================================== */
-.countdown {
-    display: flex;
-    gap: var(--spacing-md);
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: var(--spacing-xl);
-    animation: fadeInUp 1s ease-out 1.6s both;
-}
-
-.countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-md);
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    min-width: 100px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-}
-
-.countdown-item:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--red-bright);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(241, 5, 68, 0.3);
-}
-
-.countdown-value {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 900;
-    background: linear-gradient(135deg, #f10544 0%, #9bccda 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1;
-}
-
-.countdown-label {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-}
-
-.countdown-separator {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 900;
-    color: var(--red-bright);
-    opacity: 0.5;
-    animation: blink 2s ease-in-out infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 1;
-    }
-}
 
 /* ==========================================
    JOURNEY LINK
    ========================================== */
 .journey-link-section {
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
     text-align: center;
-    animation: fadeInUp 1s ease-out 2s both;
+    animation: fadeInUp 1s ease-out 1.6s both;
 }
 
 .journey-link {
@@ -730,23 +666,6 @@ body {
         min-width: unset;
     }
     
-    .countdown {
-        gap: var(--spacing-sm);
-    }
-    
-    .countdown-item {
-        min-width: 70px;
-        padding: var(--spacing-sm);
-    }
-    
-    .countdown-value {
-        font-size: 2rem;
-    }
-    
-    .countdown-separator {
-        display: none;
-    }
-    
     .social-links {
         gap: var(--spacing-sm);
     }
@@ -772,18 +691,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .countdown-item {
-        min-width: 60px;
-        padding: var(--spacing-xs);
-    }
-    
-    .countdown-value {
-        font-size: 1.5rem;
-    }
-    
-    .countdown-label {
-        font-size: 0.7rem;
-    }
+    /* Mobile optimizations */
 }
 
 /* ==========================================

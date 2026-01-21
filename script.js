@@ -483,11 +483,6 @@ document.addEventListener('DOMContentLoaded', () => {
         new CursorFollower();
     }
     
-    // Initialize countdown (set target date to 90 days from now)
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 90);
-    new CountdownTimer(targetDate);
-    
     // Initialize notification form
     new NotificationForm();
     
